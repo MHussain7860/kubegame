@@ -5,7 +5,7 @@ metadata:
   labels:
     app: app1
 spec:
-  replicas: 5
+  replicas: 8
   selector:
     matchLabels:
       app: app1
@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: kubegame
-        image: malikhussain/retail-store-sample-ui:2.0.0
+        image: kiran2361993/kubegame:v2
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 
 ---
 apiVersion: v1
@@ -30,6 +30,6 @@ spec:
   selector:
     app: app1
   ports:
-  - port: 8080
-    targetPort: 8080
+  - port: 80
+    targetPort: 80
     nodePort: 30007
