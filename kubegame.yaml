@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: kubegame
-        image: kiran2361993/kubegame:v2
+        image: malikhussain/retail-store-sample-ui:2.0.0
         ports:
         - containerPort: 80
 
